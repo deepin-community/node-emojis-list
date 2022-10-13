@@ -1,0 +1,26 @@
+Source: node-emojis-list
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Thorsten Alteholz <debian@alteholz.de>
+Build-Depends: debhelper-compat (= 12)
+ , pkg-js-tools (>= 0.9.35~)
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-emojis-list
+Vcs-Git: https://salsa.debian.org/js-team/node-emojis-list.git/
+Homepage: https://github.com/Kikobeats/emojis-list
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-emojis-list
+Architecture: all
+Depends: ${misc:Depends}
+ , nodejs
+Description: complete list of standard emojis
+ This module provides a complete list of standard Unicode Hex Character
+ Code that represent emojis.
+ .
+ The representation of the emoji depends of the system. It might be
+ possible that the system doesn't have all the representations.
+ .
+ Node.js is an event-based server-side JavaScript engine.
